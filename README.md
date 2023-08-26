@@ -22,6 +22,7 @@ Set-up Git for the project
 Troubleshooting
 
 Error: “...tip of your current branch is behind its remote counterpart…”
+
 Solution: run the following command, then run ‘git push -u origin main’ 
 
     • git pull --rebase
