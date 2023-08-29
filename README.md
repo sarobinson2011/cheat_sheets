@@ -19,6 +19,11 @@ Set-up Git for the project
         ◦ git remote add origin <link-to-repo.git>
         ◦ git push -u origin main
 
+To Clone a Git Repo
+
+    1) Run the following command:
+        ◦ git clone https://github.com/username/example-repo.git
+
 Troubleshooting
 
 Error: “...tip of your current branch is behind its remote counterpart…”
