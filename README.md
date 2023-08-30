@@ -24,6 +24,11 @@ To Clone a Git Repo
     1) Run the following command:
         ◦ git clone https://github.com/username/example-repo.git
 
+To Clone a Git Repo that was written under Brownie
+
+    1) Ensure Brownie is initialised by doing the following:
+        ◦ ???
+
 Troubleshooting
 
 Error: “...tip of your current branch is behind its remote counterpart…”
