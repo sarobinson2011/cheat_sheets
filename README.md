@@ -36,6 +36,7 @@ Error: “...tip of your current branch is behind its remote counterpart…”
 Solution: run the following command, then run ‘git push -u origin main’ 
 
     • git pull --rebase
+    • git pull origin main (can use --rebase or merge)
 
 ## Brownie
 
