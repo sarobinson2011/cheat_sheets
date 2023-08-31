@@ -99,3 +99,21 @@ brownie networks delete mainnet-fork
 brownie networks add development mainnet-fork cmd=ganache-cli host=http://127.0.0.1 fork=https://eth-mainnet.g.alchemy.com/v2/Eip3WhOPyEilqfLs5xs4dZ76CZs8R43g accounts=10 mnemonic=brownie port=8545
 
 brownie networks add <development OR mainnet> <id> <cmd> <host> etc.
+
+
+Brownie update network-config.yaml file (in .brownie) to include Sepolia
+
+1) Update network-config.yaml with the following:
+   
+	- chainid: 11155111
+	- explorer: https://api-sepolia.etherscan.io/api
+	- host: https://sepolia.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+	- id: sepolia
+	- multicall2: '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696'
+	- name: Sepolia (Infura)
+	- provider: infura
+
+
+ ◦ git clone https://github.com/username/example-repo.git
+
+
