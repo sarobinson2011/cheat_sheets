@@ -21,3 +21,11 @@ Standard convention is to use 3 comment marks e.g. /// to indicate a Natspec com
 
 You can include these comments above functions, state variables, or any significant sections of your Solidity code to document your contract effectively.
 
+
+### Template :
+
+    /// @title A title that should describe the contract/interface
+    /// @author The name of the author
+    /// @notice Explain to an end user what this does
+    /// @dev Explain to a developer any extra details
+
