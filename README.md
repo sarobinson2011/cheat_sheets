@@ -118,3 +118,23 @@ Brownie update network-config.yaml file (in .brownie) to include Sepolia
  ◦ git clone https://github.com/username/example-repo.git
 
 
+
+## Import an OpenZeppelin library into a smart contract
+
+For example, you might have this line in your Solidity code:
+   
+	- import "openzeppelin-contracts-08/token/ERC20/ERC20.sol";
+
+But it's underlined in red with an error (file not found) --> do this:
+
+	- make sure the compiler remapping (‘@openzeppelin’) is correct
+	- if needed use the brownie package manager to install the library, e.g.
+ 
+ 	- brownie pm install OpenZeppelin/openzeppelin-contacts@3.4.0
+	
+
+ 
+
+ 
+
+
