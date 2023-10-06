@@ -29,3 +29,15 @@ You can include these comments above functions, state variables, or any signific
     /// @notice Explain to an end user what this does
     /// @dev Explain to a developer any extra details
 
+## Full list of Natspec comment tags:
+    
+    - @title         A title that should describe the contract/interface 	contract, library, interface
+    - @author        The name of the author 	                            contract, library, interface
+    - @notice        Explain to an end user what this does 	                contract, library, interface, function, public state variable, event
+    - @dev           Explain to a developer any extra details 	            contract, library, interface, function, state variable, event
+    - @param         Documents a parameter (followed by parameter name) 	function, event
+    - @return        Documents return variables of a contract’s function 	function, public state variable
+    - @inheritdoc    Copies all missing tags from the base function (must be followed by the contract name) 	function, public state variable
+    - @custom:...    Custom tag, semantics is application-defined 	        everywhere
+    ◦ @notice        Description of what the contract does                 (for end-users)
+    
