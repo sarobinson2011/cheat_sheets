@@ -19,15 +19,15 @@ Set-up Git for the project
         ◦ git remote add origin <link-to-repo.git>
         ◦ git push -u origin main
 
+To Create a new branch
+
+    1) Run the following command:
+        ◦ git checkout -b <branch name>
+
 To Clone a Git Repo
 
     1) Run the following command:
         ◦ git clone https://github.com/username/example-repo.git
-
-To Clone a Git Repo that was written under Brownie
-
-    1) Ensure Brownie is initialised by doing the following:
-        ◦ ???
 
 Troubleshooting
 
@@ -102,10 +102,11 @@ brownie networks add development mainnet-fork cmd=ganache-cli host=http://127.0.
 brownie networks add <development OR mainnet> <id> <cmd> <host> etc.
 
 
+
 Brownie update network-config.yaml file (in .brownie) to include Sepolia
 
-1) Update network-config.yaml with the following:
-   
+    1) Update network-config.yaml with the following:
+    
 	- chainid: 11155111
 	- explorer: https://api-sepolia.etherscan.io/api
 	- host: https://sepolia.infura.io/v3/$WEB3_INFURA_PROJECT_ID
@@ -113,10 +114,6 @@ Brownie update network-config.yaml file (in .brownie) to include Sepolia
 	- multicall2: '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696'
 	- name: Sepolia (Infura)
 	- provider: infura
-
-
- ◦ git clone https://github.com/username/example-repo.git
-
 
 
 ## Import an OpenZeppelin library into a smart contract
