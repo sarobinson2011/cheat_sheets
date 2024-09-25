@@ -37,6 +37,8 @@ Solution: run the following command, then run ‘git push -u origin main’
 
     • git pull --rebase
     • git pull origin main (can use --rebase or merge)
+    • if still having issues:
+    	• try: git push -f origin main
 
 ## Brownie
 
