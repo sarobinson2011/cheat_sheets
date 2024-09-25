@@ -24,6 +24,12 @@ To Create a new branch
     1) Run the following command:
         ◦ git checkout -b <branch name>
 
+To check with branch you are on
+
+    1) Run the following command:
+        ◦ git branch
+			(if the local branch isn't updating, try closing and re-opening vscode)
+
 To Clone a Git Repo
 
     1) Run the following command:
