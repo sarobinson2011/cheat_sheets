@@ -5,8 +5,12 @@ Quick start "cheat sheets" for various languages
 
 Set-up Git for the project
 
-    1) Create the repository in Github
-    2) Copy/paste the Github instructions into terminal (as follows):
+    1) Create the local folder / navigate to it in Vscode
+	2) forge init . (if problems run: forge init --force .) 
+ 	3) forge install foundry-rs/forge-std
+  		3a) forge install <any other libraries required>
+	4) Create the repository in Github
+    5) Copy/paste the Github instructions into terminal (as follows):
         ◦ git init -b main
         ◦ git config user.name "sarobinson2011"
         ◦ git config user.email "sarobinson2011@gmail.com"
