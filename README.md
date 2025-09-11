@@ -11,17 +11,17 @@ Set-up Git for the project
   		3a) forge install <any other libraries required>
 	4) Create the repository in Github
     5) Copy/paste the Github instructions into terminal (as follows):
-        ◦ git init -b main
-        ◦ git config user.name "sarobinson2011"
-        ◦ git config user.email "sarobinson2011@gmail.com"
-        ◦ git add .
-        ◦ git status
-        ◦ if you forgot to gitignore .env then:
-            ▪ git git rm –cached .env
-        ◦ git commit -m “initial commit”
-        ◦ git branch -M main (not necessary if you already ran “init -b main”)
-        ◦ git remote add origin <link-to-repo.git>
-        ◦ git push -u origin main
+        git init -b main
+        git config user.name "sarobinson2011"
+        git config user.email "sarobinson2011@gmail.com"
+        git add .
+        git status
+        (if you forgot to gitignore .env then):
+          git git rm –cached .env
+        git commit -m “initial commit”
+        git branch -M main (not necessary if you already ran “init -b main”)
+        git remote add origin <link-to-repo.git>
+        git push -u origin main
 
 To Create a new branch
 
