@@ -95,7 +95,9 @@ Directory structure (standard) + Foundry scaffold commands (for the below struct
 	# verify
 	tree -a -d -L 3 -I "out|cache|broadcast|lib|node_modules|.git"
 
-  
+
+
+
 Troubleshooting
 
 Error: “...tip of your current branch is behind its remote counterpart…”
