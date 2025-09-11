@@ -36,8 +36,19 @@ To check with branch you are on
 
 To Clone a Git Repo
 
-    1) Run the following command:
-        ◦ git clone https://github.com/username/example-repo.git
+    1) Navigate to the folder you want to clone the project to (clone creates the project folder itself)
+	So to clone the fountain-backend 
+	2) git clone https://github.com/sarobinson2011/fountain-backend.git
+	3) cd fountain-backend
+ 	4) git config --global user.name "sarobinson2011"
+	5) git config --global user.email "sarobinson2011@gmail.com"
+ 	6) 		curl -L https://foundry.paradigm.xyz | bash					// install Foundry for the project
+			# restart your shell or source ~/.bashrc / ~/.zshrc, then:
+			foundryup
+	7)		forge --version
+			forge build
+			forge test -vv
+	8) Then start coding.
 
 Troubleshooting
 
