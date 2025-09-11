@@ -74,7 +74,7 @@ Directory structure (standard) + Foundry scaffold commands (for the below struct
 
 
 	 # set your project name
-	PROJECT="Oracle-test"
+	PROJECT="Collectibles"
 	
 	# make directories first
 	mkdir -p "$PROJECT"/{.github/workflows,script,src/apps/interfaces,src/core/interfaces,test/helpers,test/mocks}
