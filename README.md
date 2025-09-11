@@ -56,7 +56,22 @@ Directory tree structure -BASH commands
 	2) tree -a -L 3 -I "out|cache|broadcast|lib|node_modules|.git"  -->  files + directories
  	3) tree -a -L 3 -I "out|cache|broadcast|lib|node_modules|.git" > tree.txt  --> save to a file
 
-Directory structure (standard) + Foundry scaffold commands 
+Directory structure (standard) + Foundry scaffold commands (for the below structure)
+
+```text
+.
+├── .github
+│   └── workflows
+├── script
+├── src
+│   ├── apps
+│   │   └── interfaces
+│   └── core
+│       └── interfaces
+└── test
+    ├── helpers
+    └── mocks
+
 
 	 # set your project name
 	PROJECT="Oracle-test"
