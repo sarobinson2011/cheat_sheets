@@ -50,6 +50,37 @@ To Clone a Git Repo
 			forge test -vv
 	8) Then start coding.
 
+Directory tree structure -BASH commands
+
+    1) tree -a -d -L 3 -I "out|cache|broadcast|lib|node_modules|.git"  --> directories only
+	2) tree -a -L 3 -I "out|cache|broadcast|lib|node_modules|.git"  -->  files + directories
+ 	3) tree -a -L 3 -I "out|cache|broadcast|lib|node_modules|.git" > tree.txt  --> save to a file
+
+Directory structure (standard) + Foundry scaffold commands 
+
+	 # set your project name
+	PROJECT="Oracle-test"
+	
+	# make directories first
+	mkdir -p "$PROJECT"/{.github/workflows,script,src/apps/interfaces,src/core/interfaces,test/helpers,test/mocks}
+	cd "$PROJECT"
+	
+	# init git + Foundry (force into non-empty dir)
+	git init
+	forge init . --force
+	
+	# remove sample files that Foundry added
+	rm -f src/Counter.sol script/Counter.s.sol test/Counter.t.sol
+	
+	# optional .gitkeep for empty dirs
+	for d in .github/workflows script src/apps/interfaces src/core/interfaces test/helpers test/mocks; do
+	  touch "$d/.gitkeep"
+	done
+	
+	# verify
+	tree -a -d -L 3 -I "out|cache|broadcast|lib|node_modules|.git"
+
+  
 Troubleshooting
 
 Error: “...tip of your current branch is behind its remote counterpart…”
@@ -61,82 +92,6 @@ Solution: run the following command, then run ‘git push -u origin main’
     • if still having issues:
     	• try: git push -f origin main
 
-## Brownie
-
-Brownie commonly used command-line flags (or options) 
-
--s or --tb: 
-
-	Enables the stack trace for failing tests, providing more detailed information about errors.
-    
--v or --verbose: 
-
-	Increases the verbosity of the output, providing more information about the execution process.
-    
--n or --network <name>: 
-
-	Specifies the network to use for the command. <name> can be the name of a network defined in the project configuration.
-
-
-
--p or --port <port>: 
-
-	Specifies the port number to use for the network connection.
-
--H or --host <host>: 
-
-	Specifies the host address to use for the network connection.
-
--g or --gas: 
-
-	Enables gas usage statistics for contract function calls.
-
--F or --gas-price <price>: 
-
-	Specifies a custom gas price to use for contract transactions.
-
--E or --evm-version <version>: 
-
-	Specifies the EVM version to use for local testing (e.g., byzantium, constantinople, istanbul).
-    
--I or --import <module>: 
-
-	Imports a Python module before running the command. This allows you to use custom utility functions or libraries in your Brownie scripts.
-
-
-
-
-Brownie networks – add / delete
-
-
-# mainnet-fork
-     ├─id: mainnet-fork
-     ├─cmd: ganache-cli
-     └─host: http://127.0.0.1
-       ├─accounts: 10
-       ├─fork: https://eth-mainnet.g.alchemy.com/v2/Eip3WhOPyEilqfLs5xs4dZ76CZs8R43g
-       ├─mnemonic: brownie
-       └─port: 8545
-
-brownie networks delete mainnet-fork
-
-brownie networks add development mainnet-fork cmd=ganache-cli host=http://127.0.0.1 fork=https://eth-mainnet.g.alchemy.com/v2/Eip3WhOPyEilqfLs5xs4dZ76CZs8R43g accounts=10 mnemonic=brownie port=8545
-
-brownie networks add <development OR mainnet> <id> <cmd> <host> etc.
-
-
-
-Brownie update network-config.yaml file (in .brownie) to include Sepolia
-
-    1) Update network-config.yaml with the following:
-    
-	- chainid: 11155111
-	- explorer: https://api-sepolia.etherscan.io/api
-	- host: https://sepolia.infura.io/v3/$WEB3_INFURA_PROJECT_ID
-	- id: sepolia
-	- multicall2: '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696'
-	- name: Sepolia (Infura)
-	- provider: infura
 
 
 ## Import an OpenZeppelin library into a smart contract
