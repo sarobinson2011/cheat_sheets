@@ -15,6 +15,8 @@ Set-up Git for the project
         git config user.name "sarobinson2011"
         git config user.email "sarobinson2011@gmail.com"
         git add .
+			rm -rf contracts/.git 
+			(use this if you can't git add --> removes the .git file that Foundry automatically creates)
         git status
         (if you forgot to gitignore .env then):
           git git rm –cached .env
