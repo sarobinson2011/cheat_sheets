@@ -7,6 +7,7 @@ Set-up Git for the project
 
     1) Create the local folder / navigate to it in Vscode
 	2) forge init . (if problems run: forge init --force .) 
+	2a)  forge init --no-git  (if there are multiple folders and you don't want Foundry to init git)
  	3) forge install foundry-rs/forge-std
   		3a) forge install <any other libraries required>
 	4) Create the repository in Github
