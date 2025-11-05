@@ -55,6 +55,8 @@ To Clone a Git Repo
 
 Directory tree structure -BASH commands
 
+	0) tree -L 3  -->  use this for a simple directory tree (3 levels)
+	
     1) tree -a -d -L 3 -I "out|cache|broadcast|lib|node_modules|.git"  --> directories only
 	2) tree -a -L 3 -I "out|cache|broadcast|lib|node_modules|.git"  -->  files + directories
  	3) tree -a -L 3 -I "out|cache|broadcast|lib|node_modules|.git" > tree.txt  --> save to a file
